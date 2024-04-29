@@ -1,0 +1,197 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+ navbar{
+    background-color: white;
+} 
+.nav-link{
+    color: black;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    text-decoration: none;
+} 
+ .nav-link:hover{
+    color: rgb(250, 250, 250);
+    background-color: black;
+} 
+
+/* logo */
+.navbar-brand{
+    font-size: 1.25rem;
+    font-weight: 800;
+    color:black;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/* main section */
+
+.main{
+    background: url(image/main_section.jpg) no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 95vh;
+}
+
+.main h3{
+    font-size: 4.4rem;
+    font-weight: 700;
+}
+
+.main h6{
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    line-height: 1;
+    border-bottom: 3px solid rgb(233, 20, 109);
+    width: 40%;
+}
+.main .bt1{
+    height: 55px;
+    width: 138px;
+    background-color: rgb(233, 20, 109) ;
+    color: white;
+    outline: none;
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.main .bt1:hover{
+    background-color: rgb(177, 23, 87) ;
+    transition: 0.5s;
+}
+.main .bt2{
+    height: 55px;
+    width: 138px;
+    background-color:transparent ;
+    color: rgb(233, 20, 109) ;
+    outline: none;
+    border: 1px solid rgb(233, 20, 109) ;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.main .bt2:hover{
+    background-color: rgb(233, 20, 109) ;
+    transition: 0.5s;
+    color: white;
+}
+.about img{
+    -webkit-box-shadow: 7px 10px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 7px 10px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 7px 10px 5px 0px rgba(0,0,0,0.75);
+}
+h1{
+    font-size: 3rem;
+    font-weight: 900;
+}
+.btn1{
+    height: 40px;
+    width: 145px;
+    outline:none;
+    border: none;
+    background-color: black;
+    color: wheat;
+    border-radius: 4px;
+}
+.btn1:hover{
+    background-color: transparent;
+    color: black;
+    border: 1px solid black;
+    transition: 0.5s;
+}
+
+.btn2{
+    height: 40px;
+    width: 145px;
+    outline:none;
+    border: none;
+    border: 1px solid black;
+    color: black;
+    border-radius: 4px;
+}
+.btn2:hover{
+    background-color: black;
+    color: white;
+    border:none;
+    transition: 0.5s;
+}
+
+.card{
+    border: none;
+    outline: none;
+    -webkit-box-shadow: 0px 0px 7px 2px rgba(0,0,0,0.8);
+-moz-box-shadow: 0px 0px 7px 2px rgba(0,0,0,0.8);
+box-shadow: 0px 0px 7px 2px rgba(0,0,0,0.8);
+}
+.card p{
+    color: grey;
+}
+.circle{
+    height: 70px;
+    width: 70px;
+    background-color: lightgray;
+    color: black;
+    padding: 12px;
+    font-size: 30px;
+    border-radius: 50px;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+.card:hover .circle{
+    background-color: black;
+    color: white;
+    transition: 0.5s;
+}
+
+/* portfolio */
+
+.control ul li{
+list-style: none;
+background-color: black;
+padding: 5px 15px;
+color: white;
+display: inline-block;
+cursor: pointer;
+letter-spacing: 2px;
+}
+
+.item{
+    position: relative;
+}
+.item:hover{
+    -webkit-box-shadow: 3px 3px 8px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 3px 3px 8px 1px rgba(0,0,0,0.75);
+    box-shadow: 3px 3px 8px 1px rgba(0,0,0,0.75);
+    transition: 0.5s;
+}
+.item span{
+    position: absolute;
+    top: 40%;
+    left: 45%;
+    font-size: 40px;
+    color: black;
+    cursor: pointer;
+    opacity: 0;
+}
+.item:hover span{
+   opacity: 1;
+   transition: 0.5s;
+}
+.item:before{
+    content: "";
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(240, 238, 228, 0);
+    opacity: 1;
+    position: absolute;
+}
+
+.item:hover:before{
+    opacity: 1;
+    transition: 0.3s;
+    
+}
