@@ -30,59 +30,95 @@
 }
 
 /* main section */
-
-.main{
-    background: url(image/main_section.jpg) no-repeat;
+.main {
+    background: url('image/pixelcut-export.jpeg') no-repeat;
     background-size: cover;
     width: 100%;
     height: 95vh;
+    display: flex;
+    align-items: center; /* Centers content vertically */
+    justify-content: flex-end; /* Aligns content to the right */
+    padding: 0 2rem; /* Adds padding to avoid content sticking to edges */
 }
 
-.main h3{
+.main .container {
+    display: flex;
+    justify-content: flex-end; /* Align content in the container to the right */
+    width: 100%;
+    padding-right: 20px; /* Add space from the right edge */
+}
+
+/* Styling for h3 (Main Heading) */
+.main h3 {
     font-size: 4.4rem;
     font-weight: 700;
+    margin: 0;
+    text-align: right; /* Align text to the right */
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2); /* Adds a shadow for depth */
+    color: rgb(233, 20, 109); /* Gives a vibrant color */
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition for color change */
 }
 
-.main h6{
+.main h3:hover {
+    color: rgb(177, 23, 87); /* Darker shade when hovered */
+    transform: translateX(10px); /* Slight movement effect */
+}
+
+/* Styling for h6 (Subheading) */
+.main h6 {
     font-size: 1.4rem;
     text-transform: uppercase;
     line-height: 1;
     border-bottom: 3px solid rgb(233, 20, 109);
     width: 40%;
+    text-align: right; /* Align text to the right */
+    margin-top: 10px; /* Adds space between h3 and h6 */
+    color: rgb(100, 100, 100); /* Lighter gray color */
+    letter-spacing: 1px; /* Adds some spacing for a refined look */
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition for color change */
 }
-.main .bt1{
+
+.main h6:hover {
+    color: rgb(233, 20, 109); /* Change to the same color as h3 on hover */
+    transform: translateX(5px); /* Slight movement effect */
+}
+
+
+.main .bt1, .main .bt2 {
     height: 55px;
     width: 138px;
-    background-color: rgb(233, 20, 109) ;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.5s;
+    margin-top: 20px;
+}
+
+.main .bt1 {
+    background-color: rgb(233, 20, 109);
     color: white;
-    outline: none;
     border: none;
-    font-weight: bold;
-    border-radius: 5px;
 }
-.main .bt1:hover{
-    background-color: rgb(177, 23, 87) ;
-    transition: 0.5s;
+
+.main .bt1:hover {
+    background-color: rgb(177, 23, 87);
 }
-.main .bt2{
-    height: 55px;
-    width: 138px;
-    background-color:transparent ;
-    color: rgb(233, 20, 109) ;
-    outline: none;
-    border: 1px solid rgb(233, 20, 109) ;
-    font-weight: bold;
-    border-radius: 5px;
+
+.main .bt2 {
+    background-color: transparent;
+    color: rgb(233, 20, 109);
+    border: 1px solid rgb(233, 20, 109);
 }
-.main .bt2:hover{
-    background-color: rgb(233, 20, 109) ;
-    transition: 0.5s;
+
+.main .bt2:hover {
+    background-color: rgb(233, 20, 109);
     color: white;
 }
+
+
 .about img{
     -webkit-box-shadow: 7px 10px 5px 0px rgba(0,0,0,0.75);
--moz-box-shadow: 7px 10px 5px 0px rgba(0,0,0,0.75);
-box-shadow: 7px 10px 5px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 7px 10px 5px 0px rgba(0,0,0,0.75);
+	box-shadow: 7px 10px 5px 0px rgba(0,0,0,0.75);
 }
 h1{
     font-size: 3rem;
@@ -124,8 +160,8 @@ h1{
     border: none;
     outline: none;
     -webkit-box-shadow: 0px 0px 7px 2px rgba(0,0,0,0.8);
--moz-box-shadow: 0px 0px 7px 2px rgba(0,0,0,0.8);
-box-shadow: 0px 0px 7px 2px rgba(0,0,0,0.8);
+	-moz-box-shadow: 0px 0px 7px 2px rgba(0,0,0,0.8);
+	box-shadow: 0px 0px 7px 2px rgba(0,0,0,0.8);
 }
 .card p{
     color: grey;
@@ -142,7 +178,7 @@ box-shadow: 0px 0px 7px 2px rgba(0,0,0,0.8);
     margin-bottom: 20px;
 }
 .card:hover .circle{
-    background-color: black;
+    background-color: red;
     color: white;
     transition: 0.5s;
 }
